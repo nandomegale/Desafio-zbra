@@ -1,0 +1,20 @@
+<h1>Torneio ZBRA</h1>
+
+<p>Participantes:</p>
+<app-add-player-modal (addNewPlayer)="onAddNewPlayer($event)"></app-add-player-modal>
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>Celular</th>
+        <th>Email</th>
+    </tr>
+
+    <tr *ngFor="let player of players">
+        <td>{{player.name}}</td>
+        <td>{{player.cel}}</td>
+        <td>{{player.email}}</td>
+        <button type="button" class="btn btn-warning" (click)="editPlayer(this.player)">Editar</button>
+        <button type="button" class="btn btn-danger" (click)="deletePlayer(this.player)">Excluir</button>
+
+    </tr>
+</table>
