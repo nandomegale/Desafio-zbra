@@ -17,7 +17,7 @@ export class AddPlayerModalComponent implements OnInit {
 
   submitted: boolean;
 
-  @Output() addNewPlayer = new EventEmitter();
+  @Output() addNewPlayerEvent = new EventEmitter();
 
   constructor(
     private modalService: BsModalService,
@@ -54,7 +54,7 @@ export class AddPlayerModalComponent implements OnInit {
     if (this.form.valid) {
       this.players.push(this.form.value);
       localStorage.setItem('players', JSON.stringify(this.players));
-      this.addNewPlayer.emit(this.form.value);
+      this.addNewPlayerEvent.emit(this.form.value);
       this.form.reset();
       this.bsModalRef.hide();
 

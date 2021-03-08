@@ -13,15 +13,15 @@ export class DashboardComponent implements OnInit {
     this.players.push(event);
   }
 
+  onEditPlayer(event) {
+    this.players = JSON.parse(localStorage.getItem('players'));
+  }
+
   constructor() { }
 
   ngOnInit(): void {
     localStorage.getItem('players') ? this.players = JSON.parse(localStorage.getItem('players')) : this.players = [];
 
-  }
-
-  editPlayer(player) {
-    console.log(player);
   }
 
   deletePlayer(player) {

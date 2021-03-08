@@ -22,7 +22,8 @@
                 <label for="cel">Celular</label>
                 <input type="cel" class="form-control" name="cel" id="cel"
                     placeholder="Digite o numero de celular do jogador" formControlName="cel" required
-                    [ngClass]="{'is-invalid': submitted && hasError('cel')}">
+                    [ngClass]="{'is-invalid': submitted && hasError('cel')}" mask="(00) 00000-0000"
+                    showMaskTyped="true">
                 <div class="invalid-feedback" *ngIf=""></div>
 
                 <br />

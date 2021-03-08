@@ -1,0 +1,60 @@
+ul {
+  list-style: none;
+}
+
+div.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  height: 50vh;
+}
+div.semifinals {
+  padding: 0;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+li div.bracket {
+  height: 5rem;
+  border-width: 3px 3px 3px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+div.final {
+  padding: 0;
+}
+
+div.final-bracket {
+  height: 10rem;
+  border-width: 3px 3px 3px 0;
+  border-color: black;
+  border-style: solid;
+}
+
+div.champion {
+  padding: 0;
+}
+
+div.champion p {
+  margin-bottom: 0;
+}
+
+div hr {
+  display: block;
+  border-top: 3px solid black;
+  margin-top: 0;
+}
+
+div.trophy {
+  padding: 0;
+}
+
+div img.trophy {
+  height: 6rem;
+  width: 6rem;
+}

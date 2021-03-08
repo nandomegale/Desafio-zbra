@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col md-3 semifinals">
+            <ul>
+                <li>
+                    <a (click)="setFinal1(semifinal1[0])">
+                        {{semifinal1[0].name}}
+                    </a>
+                </li>
+                <li>
+                    <div class="bracket"></div>
+                </li>
+                <li>
+                    <a (click)="setFinal1(semifinal1[1])">
+                        {{semifinal1[1].name}}
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a (click)="setFinal2(semifinal2[0])">
+                        {{semifinal2[0].name}}
+                    </a>
+                </li>
+                <li>
+                    <div class="bracket"></div>
+                </li>
+                <li>
+                    <a (click)="setFinal2(semifinal2[1])">
+                        {{semifinal2[1].name}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col md-3 final">
+            <a (click)="setChampion(final[0])">{{final[0].name}}</a>
+            <div class="final-bracket">
+
+            </div>
+            <a (click)="setChampion(final[1])">{{final[1].name}}</a>
+
+        </div>
+        <div class="col md-3 champion">
+            <p>{{champion.name}}</p>
+            <hr />
+        </div>
+        <div class="col md-3 trophy">
+            <img class="trophy" src="../../assets/images/trophy.png" alt="">
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-primary" routerLink="/">Voltar</button>
+</div>

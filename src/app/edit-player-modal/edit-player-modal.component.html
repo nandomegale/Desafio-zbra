@@ -1,1 +1,43 @@
-<p>edit-player-modal works!</p>
+<button type="button" class="btn btn-info" (click)="openModal(template)">Editar</button>
+
+<ng-template #template>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">Editar participante</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <form [formGroup]="form">
+
+            <div class="form-group">
+
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" class="form-control" formControlName="name"
+                    [ngClass]="{'is-invalid': submitted && hasError('name')}" required>
+                <div class="invalid-feedback" *ngIf="">{{player.name}}</div>
+
+                <br />
+                <label for="cel">Celular</label>
+                <input type="cel" class="form-control" name="cel" id="cel"
+                    placeholder="Digite o numero de celular do jogador" formControlName="cel" required
+                    [ngClass]="{'is-invalid': submitted && hasError('cel')}" mask="(00) 00000-0000"
+                    showMaskTyped="true">
+                <div class="invalid-feedback" *ngIf=""></div>
+
+                <br />
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Digite o email do jogador"
+                    formControlName="email" required email [ngClass]="{'is-invalid': submitted && hasError('email')}">
+                <div class="invalid-feedback" *ngIf=""></div>
+
+
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" (click)="editPlayer()">Salvar</button>
+        <button type="button" class="btn btn-secondary" (click)="closeModal()">Fechar</button>
+
+    </div>
+</ng-template>

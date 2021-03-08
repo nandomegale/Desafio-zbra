@@ -21,6 +21,7 @@
     "@angular/router": "~9.1.13",
     "bootstrap": "^4.6.0",
     "ngx-bootstrap": "^6.2.0",
+    "ngx-mask": "^11.1.4",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
