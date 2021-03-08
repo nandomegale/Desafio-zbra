@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AddPlayerModalComponent } from './add-player-modal/add-player-modal.component';
 import { EditPlayerModalComponent } from './edit-player-modal/edit-player-modal.component';
-import { ScheduleComponent } from './schedule/schedule.component';
+import { TournamentBracketComponent } from './tournament-bracket/tournament-bracket.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
     DashboardComponent,
     AddPlayerModalComponent,
     EditPlayerModalComponent,
-    ScheduleComponent,
+    TournamentBracketComponent,
   ],
   imports: [
     BrowserModule,

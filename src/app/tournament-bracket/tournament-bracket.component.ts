@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-schedule',
-  templateUrl: './schedule.component.html',
-  styleUrls: ['./schedule.component.css']
+  selector: 'app-tournament-bracket',
+  templateUrl: './tournament-bracket.component.html',
+  styleUrls: ['./tournament-bracket.component.css']
 })
-export class ScheduleComponent implements OnInit {
+export class TournamentBracketComponent implements OnInit {
 
   players: any = [];
 
@@ -36,7 +36,6 @@ export class ScheduleComponent implements OnInit {
   }
 
   setFinal1(player) {
-    console.log(player);
     this.final[0] = player;
   }
 
