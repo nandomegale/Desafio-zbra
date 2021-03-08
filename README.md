@@ -1,27 +1,51 @@
-# ZbraTournament
+# :trophy:  Desafio ZBRA :trophy: 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.13.
+Desenvolvimento de um APP simples que gera um template de torneio mata-mata. :computer:
 
-## Development server
+## Acesso
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Aplicação está disponível neste link :arrow_right: [Torneio ZBRA](https://zbra-tournament.herokuapp.com/).
 
-## Code scaffolding
+No primeiro acesso a aplicação pode demorar para carregar, pois o Heroku coloca a aplicacão em sleep mode. :sleeping:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Requisitos
 
-## Build
+-  :heavy_check_mark: Deve ser possível adicionar, editar e remover participantes do torneio.
+-  :heavy_check_mark: A lista de participantes deve ser guardada no localStorage ou IndexedDB.
+-  :heavy_check_mark: O campo Nome completo é obrigatório.
+- :heavy_check_mark: O campo Celular é obrigatório e deve conter a seguinte máscara: (XX) XXXXX-XXXX.
+- :heavy_check_mark: O campo Email é obrigatório e deve estar no seguinte formato: nome@dominio.com.
+- :x: O número de participantes de um torneio deve ser uma potência de 2.
+- :x: O projeto deve conter testes unitários.
+- :heavy_check_mark: O projeto deve usar TypeScript ou ECMA 6+.
+- :heavy_check_mark: Não usar bibliotecas existentes para construir as chaves.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Sobre
 
-## Running unit tests
+### Aplicação
+- Para a construção da aplicação foi utilizado Angular 9.
+- Estilização e responsividade com bootstrap v4. :art:
+- O modal de adição e edição de participantes foi utilizado ngx-bootstrap.
+- Para máscara de telefone ngx-mask. :phone:
+- Utilizado rotas para navegar entre as páginas.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Deploy :hammer:
+- Foi realizado o deploy da aplicação no Heroku.
+- Criado um servidor node com express.
 
-## Running end-to-end tests
+## Rodar localmente
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+   ### Npm  :pushpin:
+   v6.14.10
+   ### Node  :pushpin:
+   v14.15.4
+   ### Angular  :pushpin:
+   v9.1.13
+   
+   ### Instruções
+   :one: Possuir as instalaçoes acima nas versões indicada ou superior. <br>
+   :two: Clonar repositório. <br>
+   :three: Navegar até a pasta onde se encontra o projeto. :open_file_folder: <br>
+   :four: Executar o comando "ng serve". <br>
+   :five: Abrir o localhost na posta 4200 no navegador. http://localhost:4200/ <br>
+      
